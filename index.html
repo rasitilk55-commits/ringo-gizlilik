@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ringo Gizlilik Politikası</title>
+<meta name="description" content="Ringo İngilizce kelime uygulamasının gizlilik politikası.">
+<style>
+  :root {
+    --canvas: #FAF6EF; --surface: #FFFFFF; --ink: #20232E; --muted: #626574;
+    --brand: #A73531; --soft: #FCE5DC; --border: #E5DCD0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --canvas: #15171C; --surface: #1E2128; --ink: #F6F2EC; --muted: #B6B9C4;
+      --brand: #FFB0A8; --soft: #3B2527; --border: #383C45;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--canvas); color: var(--ink);
+    font: 17px/1.65 -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+  .eyebrow { color: var(--brand); font-weight: 700; font-size: 12px; letter-spacing: .14em; }
+  h1 { font-size: 40px; line-height: 1.1; margin: 8px 0 4px; letter-spacing: -.02em; }
+  h1 span { color: var(--brand); }
+  .date { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 20px 22px; margin: 16px 0; }
+  .card.soft { background: var(--soft); border-color: transparent; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  a { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">RINGO · GİZLİLİK</div>
+  <h1>Verin <span>sende kalır.</span></h1>
+  <p class="date">Son güncelleme: 1 Ekim 2026</p>
+
+  <div class="card soft">
+    <strong>Kısaca:</strong> Ringo hesap açmadan çalışır ve o durumda hiçbir veri cihazından çıkmaz.
+    Hesap açarsan yalnızca yedekleme, arkadaşlar ve Arena için gerekenler sunucumuza gönderilir.
+    Reklam kimliği, konum, rehber, mikrofon veya kamera erişimi istemeyiz. Verini satmayız.
+  </div>
+
+  <h2>Biz kimiz</h2>
+  <p>Ringo, Türkçe konuşanlar için İngilizce kelime öğrenme uygulamasıdır. Bu politikada “biz”,
+  uygulamanın geliştiricisi (RST Lingo) anlamına gelir. Sorular ve veri talepleri için:
+  <a href="https://github.com/rasitilk55-commits/ringo-gizlilik/issues">github.com/rasitilk55-commits/ringo-gizlilik/issues</a>
+  ya da Google Play'deki geliştirici iletişim adresi.</p>
+
+  <h2>Hesap olmadan</h2>
+  <p>Çalışma geçmişin, ilerlemen, seviye sınavı sonucun, ayarların ve avatarın yalnızca telefonundaki
+  uygulama veritabanında tutulur. Bu durumda bize hiçbir veri gönderilmez.</p>
+
+  <h2>Hesap açarsan gönderilenler</h2>
+  <div class="scroll"><table>
+    <tr><th>Veri</th><th>Neden</th></tr>
+    <tr><td>E-posta adresi, ya da Google, Apple veya Facebook ile girişte bu sağlayıcının paylaştığı ad ve e-posta</td><td>Hesabını oluşturmak ve giriş yapmanı sağlamak</td></tr>
+    <tr><td>Görünen ad, kullanıcı adı, avatar ayarı</td><td>Arkadaşlarına ve Arena rakiplerine göstermek</td></tr>
+    <tr><td>Kelime bazında çalışma kayıtları: hangi kelime, bildin mi, ne zaman, kutu durumu, cevap süresi</td><td>İlerlemeni yedeklemek ve başka cihazda devam etmeni sağlamak</td></tr>
+    <tr><td>Uygulama ayarların (günlük hedef, tema gibi)</td><td>Cihazlar arasında aynı tutmak</td></tr>
+    <tr><td>Arena puanı, maç sonuçları ve Arena cevapların (en fazla 200 karakter)</td><td>Maçları adil sonuçlandırmak ve sıralama</td></tr>
+    <tr><td>Arkadaş kodları ve engellediğin kişiler</td><td>Arkadaş listesini yönetmek</td></tr>
+  </table></div>
+  <p class="muted">Kart çalışırken yazdığın cevapların metni hiçbir koşulda sunucuya gönderilmez;
+  yalnızca doğru mu yanlış mı olduğu kaydedilir.</p>
+
+  <h2>Satın alımlar</h2>
+  <p>Ringo Plus satın alırsan ödemeyi Google Play veya App Store yapar; kart bilgilerin bize ulaşmaz.
+  Aboneliğin durumunu doğrulamak için RevenueCat hizmetine yalnızca hesap kimliğin ve satın alma
+  bilgisi iletilir.</p>
+
+  <h2>Kullandığımız hizmetler</h2>
+  <ul>
+    <li><strong>Supabase</strong> — hesaplar ve yedeklenen veriler için sunucu ve veritabanı.</li>
+    <li><strong>Google, Apple, Facebook</strong> — yalnızca bu yöntemle giriş yaparsan, kimliğini doğrulamak için.</li>
+    <li><strong>RevenueCat, Google Play, App Store</strong> — yalnızca satın alma yaparsan.</li>
+  </ul>
+  <p>Reklam ağı, reklam kimliği veya üçüncü taraf takip aracı kullanmıyoruz.</p>
+
+  <h2>Kullanım istatistikleri</h2>
+  <p>Varsayılan olarak kapalıdır. Ayarlar'dan açarsan yalnızca tamamlanan oturum sayısı gibi toplam
+  sayılar toplanır; cevapların, kelime geçmişin, adın veya e-postan bunlara dahil olmaz.</p>
+
+  <h2>Bildirimler</h2>
+  <p>Tekrar hatırlatmaları cihazında üretilir, günde en fazla bir kez gelir ve öğrendiğin kelimeyi
+  içermez. Ayarlar'dan kapatabilirsin.</p>
+
+  <h2>Güvenlik ve saklama</h2>
+  <p>Sunucuyla tüm iletişim şifrelidir (HTTPS). Sunucudaki her tablo satır düzeyinde erişim kurallarıyla
+  korunur; bir hesap başka bir hesabın verisini okuyamaz. Verilerin hesabın açık olduğu sürece saklanır.</p>
+
+  <h2>Haklarını kullanmak</h2>
+  <ul>
+    <li><strong>Dışa aktarma:</strong> Ayarlar → “Verilerimi dışa aktar”.</li>
+    <li><strong>Silme:</strong> Ayarlar → “Öğrenme verimi sil” veya “Hesabımı ve tüm verimi sil”.
+    Hesap silindiğinde sunucudaki tüm verilerin de kalıcı olarak silinir.</li>
+    <li>6698 sayılı KVKK ve GDPR kapsamındaki diğer talepler için yukarıdaki iletişim kanallarından bize yazabilirsin.</li>
+  </ul>
+
+  <h2>Çocuklar</h2>
+  <p>Ringo'da serbest sohbet ve aranabilir kullanıcı rehberi yoktur. 13 yaşından küçükler hesap
+  açmamalıdır; hesap olmadan uygulamanın öğrenme kısmının tamamı kullanılabilir.</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politikayı değiştirirsek güncelleme tarihini yenileriz; önemli değişiklikleri uygulama içinde duyururuz.</p>
+</main>
+</body>
+</html>
